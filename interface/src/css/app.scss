@@ -1,0 +1,61 @@
+// app global css in SCSS form
+
+// ------------------------------------------- TABLE
+.q-table {
+  position: relative;
+  // margin-left: 15px;
+  
+  // border-left: 1px solid $grey-4  ;
+  // border-right: 1px solid $grey-4  ;
+}
+
+// STICKY COLUMNS
+.q-table > thead > tr {
+  position: sticky;
+  top: 0;
+  background-color: $grey-1;
+  z-index: 1;
+
+  
+}
+
+
+
+
+.q-table > thead > tr > th {
+  height: 50px;
+  border-top: 1px solid $grey-4  ;
+  // color: $grey;
+  font-size: 12px;
+
+}
+
+// TOP TABLE STYLE
+.q-absolute_label.q-field--focused // on focused
+  > .q-field__inner
+  > .q-field__control
+  > .q-field__control-container
+  > .q-field__label {
+  top: 0;
+  left: 10;
+  background: white;
+  z-index: 100;
+  border-radius: 20px;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
+  tarnsform: translateY(-100%) scale(0.75);
+}
+.q-absolute_label.q-field--focused
+  > .q-field__inner
+  > .q-field__control
+  > .q-field__control-container
+  > .q-field__native { // input
+  margin-bottom: 10px;
+}
+
+
+// ------------------------------------------- FORM
+.s-card-content {
+  border: 1px solid $grey-3;
+
+}
